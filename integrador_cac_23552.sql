@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `integrador_cac_23552`
+-- Base de datos: `integrador_cac`
 --
 
 -- --------------------------------------------------------
@@ -34,24 +34,26 @@ CREATE TABLE `oradores` (
   `email` varchar(100) NOT NULL,
   `tema` varchar(255) NOT NULL,
   `fecha_alta` datetime NOT NULL DEFAULT current_timestamp()
+  `activo` varchar(2) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+ 
 
 --
 -- Volcado de datos para la tabla `oradores`
 --
 
-INSERT INTO `oradores` (`id_orador`, `nombre`, `apellido`, `email`, `tema`, `fecha_alta`) VALUES
-(1, 'Pedro', 'Gomez', 'Pedro@gmail.com', 'Javascript', '2023-11-10 16:44:29'),
-(2, 'Juan', 'Lopez', 'Juan@gmail.com', 'Java', '2023-11-10 17:02:21'),
-(3, 'Carlos', 'Gonzalez', 'Carlos@gmail.com', 'Seguridad Informatica', '2023-11-10 17:03:25'),
-(4, 'Gustavo', 'Martinez', 'Gustavo@gmail.com', 'Python', '2023-11-10 17:41:31'),
-(5, 'Carmen', 'Ramirez', 'Carmen@hotmail.com', 'React', '2023-11-10 17:43:42'),
-(6, 'Ruben', 'Cordoba', 'Ruben@yahoo.com', 'Github', '2023-11-10 17:43:42'),
-(7, 'Marta', 'Marquez', 'Marta@hotmail.com', 'React', '2023-11-10 17:45:08'),
-(9, 'Olga', 'Rojas', 'Olgarojas@Yahoo.com', 'HTML', '2023-11-10 17:47:21'),
-(10, 'Romina', 'Romero', 'Romina@gmail.com', 'Java', '2023-11-10 17:47:21'),
-(11, 'Jose', 'Lopez', 'Joselopez@Yahoo.com', 'Python', '2023-11-10 17:52:46'),
-(12, 'Sabrina', 'Perez', 'Sabrina@Hotmail.com', 'Javascrip', '2023-11-10 17:52:46');
+INSERT INTO `oradores` (`id_orador`, `nombre`, `apellido`, `email`, `tema`, `fecha_alta`,'N') VALUES
+(1, 'Pedro', 'Gomez', 'Pedro@gmail.com', 'Javascript', '2023-11-10 16:44:29','N'),
+(2, 'Juan', 'Lopez', 'Juan@gmail.com', 'Java', '2023-11-10 17:02:21','N'),
+(3, 'Carlos', 'Gonzalez', 'Carlos@gmail.com', 'Seguridad Informatica', '2023-11-10 17:03:25','N'),
+(4, 'Gustavo', 'Martinez', 'Gustavo@gmail.com', 'Python', '2023-11-10 17:41:31','N'),
+(5, 'Carmen', 'Ramirez', 'Carmen@hotmail.com', 'React', '2023-11-10 17:43:42','N'),
+(6, 'Ruben', 'Cordoba', 'Ruben@yahoo.com', 'Github', '2023-11-10 17:43:42','N'),
+(7, 'Marta', 'Marquez', 'Marta@hotmail.com', 'React', '2023-11-10 17:45:08','N'),
+(9, 'Olga', 'Rojas', 'Olgarojas@Yahoo.com', 'HTML', '2023-11-10 17:47:21','N'),
+(10, 'Romina', 'Romero', 'Romina@gmail.com', 'Java', '2023-11-10 17:47:21','N'),
+(11, 'Jose', 'Lopez', 'Joselopez@Yahoo.com', 'Python', '2023-11-10 17:52:46','N'),
+(12, 'Sabrina', 'Perez', 'Sabrina@Hotmail.com', 'Javascrip', '2023-11-10 17:52:46','N');
 
 --
 -- Índices para tablas volcadas
